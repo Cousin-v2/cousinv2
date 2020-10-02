@@ -10,14 +10,14 @@ if not os.getenv('DEVICE_ID') and \
           "If you're confused, re-watch the tutorial.")
     sys.exit()
 
-os.system('pip install -U FNTPACKBOT2==1.0.8')
+os.system('pip install -U FNBOT3')
 os.system('clear')
 
-import FTNPACKBOT2
+import FNBOT3
 
 asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
 
-client = FTNPACKBOT2.PartyBot(
+client = FNBOT3.PartyBot(
     device_id=os.getenv('DEVICE_ID'),
     account_id=os.getenv('ACCOUNT_ID'),
     secret=os.getenv('SECRET')
