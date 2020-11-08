@@ -22,7 +22,6 @@ client = FNBOT3.PartyBot(
     account_id=os.getenv('ACCOUNT_ID'),
     secret=os.getenv('SECRET')
 )
-client.party_build_id = '1:2:'
 
 try:
     client.run()
