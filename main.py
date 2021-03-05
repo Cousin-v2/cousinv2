@@ -19,7 +19,7 @@ import FNBOT2
 
 asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
 
-client = FNBOT2.Partybot(
+client = FNBOT2.PartyBot(
     device_id=os.getenv('DEVICE_ID'),
     account_id=os.getenv('ACCOUNT_ID'),
     secret=os.getenv('SECRET')
